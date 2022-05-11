@@ -7,18 +7,18 @@ const initState = {
 
 }
 
-const eventReducer = (state = initState, action) => {
+const eventsReducer = (state = initState, action) => {
 
     switch(action.type) {
 
-        case actiontypes().event.loading: 
+        case actiontypes().events.loading: 
             return {
                 ...state,
                 loading: action.payload
             }   
         
 
-        case actiontypes().event.setEvent: 
+        case actiontypes().events.setEvents: 
             return {
               data: action.payload,
               loading: false,
@@ -26,7 +26,7 @@ const eventReducer = (state = initState, action) => {
             }
         
 
-        case actiontypes().event.eventFailure:
+        case actiontypes().events.eventsFailure:
             return {
                 data: [],
                 loading: false,
@@ -38,4 +38,4 @@ const eventReducer = (state = initState, action) => {
     }
 }
 
-export default eventReducer
+export default eventsReducer

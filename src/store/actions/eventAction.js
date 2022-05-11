@@ -1,15 +1,35 @@
 import actiontypes from "../actiontypes";
+import axios from 'axios'
 
-export const addEvent = post => {
+export const getEvent = (id) => {
+    return async dispatch => {
+        dispatch(loading(true))
+        try {
+            const res = await axios.get('http://localhost:8080/posts')
+            dispatch(setEvent(res.data))
+        }
+        catch (err) {
+            dispatch(eventFailure(err.message))
+        }
+    }
+}
+const setEvent = ( event ) => {
     return {
-        type: actiontypes().events.add,
-        payload: post
+        type: actiontypes().event.setEvent,
+        payload: event
     }
 }
 
-export const removeOne = id => {
+const loading = (payload) => {
     return {
-        type: actiontypes().events.removeOne,
-        payload: id
+        type: actiontypes().event.loading,
+        payload
+    }
+}
+
+const eventFailure = (payload) => {
+    return {
+        type: actiontypes().event.eventFailure,
+        payload
     }
 }

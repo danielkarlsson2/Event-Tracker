@@ -1,18 +1,15 @@
 import './App.css';
 import Header from './components/Header';
-import Events from './components/Events';
-import { Routes, Route } from 'react-router-dom'
+import Views from './views/Views';
 
 
 function App() {
   return (
     <div className="App">
-     {/* <Views /> */}
       <Header />
-        <Routes>
-          <Route path='/' element={<Events />} />
-        </Routes>
-     
+        <div className="container">
+            <Views />
+        </div>       
     </div>
   );
 }

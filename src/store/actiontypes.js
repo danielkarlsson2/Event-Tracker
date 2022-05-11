@@ -1,11 +1,14 @@
 const actiontypes = () => {
     return {
-        eventTasks: {
-            getEvents: 'GET_EVENTS'
+        events: {
+            setEvents: 'SET_EVENTS',
+            loading: 'LOADING',
+            eventsFailure: 'EVENTS_FAILURE'
         },
-        posts: {
-            add: 'ADD_POST',
-            removePost: 'REMOVE_POST'
+        event: {
+            setEvent: 'SET_EVENT',
+            loading: 'LOADING',
+            eventFailure: 'EVENT_FAILURE'
         }
     }
 }

@@ -1,8 +1,8 @@
-import { useEffect, useState } from 'react'
-// import axios from 'axios'
-import Event from './Event'
+import React from 'react'
+// import { Link } from 'react-router-dom'
 
-const Events = ({ events }) => {
+
+const Events = ({ posts }) => {
 
     // useEffect(() => {
     //     fetch('http://localhost:8080/posts')
@@ -10,11 +10,16 @@ const Events = ({ events }) => {
 
 
   return (
-      <>
-        {events.map((event) => {
-            <Event key={event.id} event={event} />
-        })}
-      </>
+    <div className='container post d-flex'>
+      {/* <div className='info'>
+        <h3>{event.title}</h3>
+        <h3>{posts.title}</h3>
+        <p>{posts.body}</p>
+      </div>
+      <div className="time">
+        <p>12:45</p>
+      </div> */}
+    </div>
   )
 }
 
