@@ -15,9 +15,13 @@ const EventsView = () => {
   }, [dispatch])
 
   return (
-    <div className=''>
-      { loading && <p>Loading...</p>}
-        { events.map(event => <Event key={event.id} event={event}/>)}
+    <div className="d-flex  justify-content-center">
+        <div className='d-flex flex-column w-50 '>
+          { loading && <p>Loading...</p>}
+            { events.map(event => <Event key={event.id} event={event}/>)}
+        </div>
+        
+
     </div>
   )
 }

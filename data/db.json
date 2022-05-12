@@ -3,21 +3,21 @@
       { 
         "id": 1, 
         "title": "Event-1",
-        "body": "lorem asdfasdf",
-        "date": "May 4th 12:00"
+        "body": "lLorem ipsum dolor sit amet consectetur adipisicing elit. Repellat consectetur praesentium incidunt ex, reiciendis cupiditate magnam aspernatur numquam odio hic!",
+        "date": "4 Maj 12:00"
 
       },
       { 
         "id": 2, 
         "title": "Event-2",
-        "body": "asdasdas asddfgwer asdfasdf",
+        "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, deleniti placeat repudiandae quo quidem tenetur?",
         "date": "19 april 15:00"
 
       },
       { 
         "id": 3, 
         "title": "Event-3",
-        "body": "asdasdas asddfgwer asdfasdf",
+        "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam exercitationem dolore sequi ullam esse labore. Illo eos quasi numquam error, a obcaecati?",
         "date": "24 juli 12:23"
 
       }

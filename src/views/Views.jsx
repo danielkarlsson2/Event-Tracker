@@ -1,5 +1,7 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
+import CreateView from './CreateView'
+import EventDetails from './EventDetails'
 // import Events from '../components/Events'
 import EventsView from './EventsView'
 
@@ -8,7 +10,9 @@ const Views = () => {
     <div>
         <Routes>
             <Route path='/' element={<EventsView /> } />
-            {/* <Route path='/' element={<Events /> } /> */}
+            <Route path='/:id' element={<EventDetails /> } />
+            <Route path='/create' element={<CreateView /> } />
+            
         </Routes>
     </div>
   )
