@@ -10,10 +10,10 @@ const Event = ({ event }) => {
       <div className='d-flex post mt-4 text-dark'>
         <div className='rounded'>          
             <h3>{event.title}</h3>      
-          <p>{event.body.slice(0,10)} ....</p>
+          <p>{event.body.slice(0,15)} ....</p>
         </div>
         <div className="">
-          <p>{event.date}</p>
+          <p><strong>{event.date}</strong></p>
         </div>
       </div>
       </Link>  

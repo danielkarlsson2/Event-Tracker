@@ -3,13 +3,13 @@ import React from 'react'
 const CreateView = () => {
   return (
     <form>
-        <div className="container mt-4 border bg-light d-flex flex-column align-items-center">
+        <div className="container mt-4 border bg-light d-flex flex-column align-items-center rounded-5">
             
             <h2 className='text-center'>Create Event</h2>
 
             <div className="inputs d-flex flex-column w-75 align-items-center">
                 
-                <div className="inputs border w-50">
+                <div className="inputs w-50">
                     <div className="mt-3 text-center">
                         <label htmlFor="title" className='me-3'>Title:</label>
                         <input type="text" id='title' placeholder='' className='w-75 rounded border-1 p-1'/>
@@ -38,7 +38,7 @@ const CreateView = () => {
 
             </div>
 
-                <button className='btn btn-warning'>Create</button>
+                <button className='btn btn-warning mb-4'>Create Event</button>
 
 
 

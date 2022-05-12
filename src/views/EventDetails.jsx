@@ -24,10 +24,10 @@ const EventDetails = () => {
           <div className="info-text d-flex justify-content-between align-items-center">
                 <div className='info'>
                   <h3>{event.title}</h3>        
-                  <p className="mt-4 w-75">{event.body}</p>
+                  <p className="mt-4 w-50">{event.body}</p>
                 </div>
-                <div className="time">
-                  <p>{event.date}</p>
+                <div className="time w-25">
+                  <p><strong>{event.date}</strong></p>
                 </div>
 
           </div>
