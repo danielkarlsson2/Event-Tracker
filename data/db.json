@@ -1,26 +1,42 @@
 {
-    "posts": [
-      { 
-        "id": 1, 
-        "title": "Event-1",
-        "body": "lLorem ipsum dolor sit amet consectetur adipisicing elit. Repellat consectetur praesentium incidunt ex, reiciendis cupiditate magnam aspernatur numquam odio hic!",
-        "date": "4 Maj 12:00"
-
-      },
-      { 
-        "id": 2, 
-        "title": "Event-2",
-        "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, deleniti placeat repudiandae quo quidem tenetur?",
-        "date": "19 april 15:00"
-
-      },
-      { 
-        "id": 3, 
-        "title": "Event-3",
-        "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam exercitationem dolore sequi ullam esse labore. Illo eos quasi numquam error, a obcaecati?",
-        "date": "24 juli 12:23"
-
-      }
-    ]
-    
-  }
+  "posts": [
+    {
+      "id": 1,
+      "title": "Bygga Altan",
+      "body": "lLorem ipsum dolor sit amet consectetur adipisicing elit. Repellat consectetur praesentium incidunt ex, reiciendis cupiditate magnam aspernatur numquam odio hic!",
+      "date": "2021-09-11",
+      "time": "19:00"
+    },
+    {
+      "id": 2,
+      "title": "Tvätta bilen",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, deleniti placeat repudiandae quo quidem tenetur?",
+      "date": "1986-04-19"
+    },
+    {
+      "id": 3,
+      "title": "Plugga",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam exercitationem dolore sequi ullam esse labore. Illo eos quasi numquam error, a obcaecati?",
+      "date": "2020-07-24"
+    },
+    {
+      "title": "asd",
+      "body": "asd",
+      "date": "2022-05-19",
+      "id": 7
+    },
+    {
+      "title": "Städa kontoret",
+      "body": "Nu måste jag städa",
+      "date": "2022-05-22",
+      "id": 8
+    },
+    {
+      "title": "asd",
+      "body": "asd",
+      "date": "2022-05-21",
+      "time": "",
+      "id": 9
+    }
+  ]
+}
