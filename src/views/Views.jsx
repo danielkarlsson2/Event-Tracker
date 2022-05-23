@@ -4,6 +4,7 @@ import CreateView from './CreateView'
 import EventDetails from './EventDetails'
 // import Events from '../components/Events'
 import EventsView from './EventsView'
+import PastEvents from './PastEvents'
 
 const Views = () => {
   return (
@@ -12,6 +13,7 @@ const Views = () => {
             <Route path='/' element={<EventsView /> } />
             <Route path='/:id' element={<EventDetails /> } />
             <Route path='/create' element={<CreateView /> } />
+            <Route path='/pastevents' element={<PastEvents /> } />
             
         </Routes>
     </div>

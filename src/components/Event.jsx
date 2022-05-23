@@ -4,6 +4,7 @@ import { Link } from "react-router-dom"
 
 const Event = ({ event }) => {
 
+  const date = new Date(event.date)
 
   return (
     <div className=""><Link to={`/${event.id}`}>
@@ -13,8 +14,8 @@ const Event = ({ event }) => {
           <p>{event.body.slice(0,15)} ....</p>
         </div>
         <div className="w-25">
-          <p className="me-1"><strong>{event.date}</strong></p>
-          <p>{event.time}</p>
+          <p className="me-1"><strong>{date.toLocaleDateString()}</strong></p>
+          <p>{date.getHours()}:{date.getMinutes()}</p>
         </div>
       </div>
       </Link>  
