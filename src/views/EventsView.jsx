@@ -5,13 +5,9 @@ import { getEvents } from '../store/actions/eventsAction'
 
 
 const EventsView = () => {
-  // console.log(Date.parse("2021-09-11T19:00"))
-  // console.log(Date.now())
   
   const dispatch = useDispatch()
   const { data: events, loading } = useSelector(state => state.events)
-
-  const [oldEvents, setOldEvents] = useState([])
   const [newEvents, setNewEvents] = useState([])
 
   useEffect(() => {
@@ -19,10 +15,8 @@ const EventsView = () => {
       return Date.parse(`${a.date}`) - Date.parse(`${b.date}`)
     })
 
-    const oldEvts = sortedEvents.filter(evt => Date.parse(`${evt.date}`) < Date.now()).reverse()
     const newEvts = sortedEvents.filter(evt => Date.parse(`${evt.date}`) > Date.now())
 
-    setOldEvents(oldEvts)
     setNewEvents(newEvts)
   }, [events])
  

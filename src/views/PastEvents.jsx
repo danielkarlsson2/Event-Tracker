@@ -27,12 +27,11 @@ const PastEvents = () => {
   }, [dispatch])
   
   return (
-    <div className="d-flex  justify-content-center">
+    <div className="d-flex justify-content-center">
       <div className="d-flex flex-column w-50 ">
          <h2 className='text-center mt-4'>Past events:</h2>
          { loading && <p>Loading...</p>}
-         { oldEvents.map(event => <Event key={event.id} event={event} />)}
-      
+         { oldEvents.map(event => <Event key={event.id} event={event} />)}      
       </div>
 
     </div>

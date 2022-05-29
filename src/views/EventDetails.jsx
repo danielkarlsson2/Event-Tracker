@@ -10,14 +10,19 @@ const EventDetails = () => {
     
     const { data: event } = useSelector(state => state.event)
     const date = new Date(event.date)
+
+    function leadingZeros(date) 
+      { 
+        return (date.getMinutes() < 10 ? '0' : '') + date.getMinutes();
+      }
     
     useEffect(() => {
         dispatch(getEvent(id))
         
     }, [dispatch, id])     
    
-    // const handleChange = 
-
+    
+    console.log(date.getMinutes())
 
   return (
     <div className="container d-flex justify-content-center mt-5">
@@ -32,14 +37,10 @@ const EventDetails = () => {
                 <div className="side w-50 mt-3">
                     <div className="time ">
                         <p className="me-1"><strong>{date.toLocaleDateString()}</strong></p>
-                        <p>{date.getHours()}:{date.getMinutes()}</p>
-                    </div>
-                    <div className="">
-                      <button className="btn btn-success btn-done mb-3">Done<i class="fa-solid fa-check ms-1"></i></button>
-                    </div>
-
+                        <p>{date.getHours()}:{leadingZeros(date)}</p>                       
+                  
+                    </div>                 
                 </div>
-
           </div>
         </div>
 

@@ -19,13 +19,12 @@ const CreateView = () => {
         title: '',
         body: '',
         date: '',
-        time: ''
+        time: '',
     })
     const onChange = e => {
         setFormData(state => ({
             ...state,
-            [e.target.name]: e.target.value
-            
+            [e.target.name]: e.target.value            
         }))         
 
     }
@@ -51,11 +50,6 @@ const CreateView = () => {
         } else {
             setDateError("")
         }
-
-        // else if(formData.body.trim() === '') {
-        //     setError(true)
-        //     return
-        // }
         
         if(errors.includes(false)) {return false}
 
@@ -85,7 +79,7 @@ const CreateView = () => {
                         <label htmlFor="title" className='me-3'>Title:</label>
                         <input type="text" name='title' id='title' placeholder='' className='w-75 rounded border-1 p-1' onChange={onChange} value={formData.title} />
                         
-                        {error && <p className='text-danger'>You have to write a title</p>}
+                                {error && <p className='text-danger'>You have to write a title</p>}
 
                     </div>
                     <div className="text-center mt-3 mb-3 d-flex justify-content-center">
@@ -93,11 +87,9 @@ const CreateView = () => {
                         <textarea name="body" id="body" className='w-75 rounded border-1 p-2' onChange={onChange} value={formData.body} ></textarea>
                     </div>
 
-
                 </div>
-                        {errorTask && <p className='text-danger'>You have to write something to do</p>}
+                                {errorTask && <p className='text-danger'>You have to write something to do</p>}
 
-                {/* {error && <p className='text-danger'>You have to fill in the empty fields</p>} */}
 
 
                 <div className="d-flex justify-content-around w-100 mb-3 mt-4 text-center">
@@ -105,21 +97,12 @@ const CreateView = () => {
                         <label htmlFor="date" className='me-3 '>Date:</label>
                         <input type="datetime-local" name='date' id='date' onChange={onChange} value={formData.date} className='rounded border-1 p-1'/>
                     </div>
-                    {/* <div className="time">
-                        <label htmlFor="time" className='me-2'>Time:</label>
-                        <input type="time" name='time' id='time' className='rounded border-1 p-1' onChange={onChange} value={formData.time} />
-
-                    </div> */}
+                  
                 </div>
                         <p className='text-danger'>{dateError}</p>
-
-
             </div>
 
                 <button className='btn btn-warning mb-4 mt-3'>Create Event</button>
-
-
-
 
         </div>
     </form>

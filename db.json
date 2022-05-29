@@ -55,6 +55,36 @@
       "date": "2022-05-28T20:30",
       "time": "",
       "id": 8
+    },
+    {
+      "title": "Testar",
+      "body": "testar igen",
+      "date": "2022-05-30T21:00",
+      "time": "",
+      "id": 9
+    },
+    {
+      "title": "Min post",
+      "body": "salskdjfhasdlkfjshdalfksdjhflkjshdf",
+      "date": "2022-06-01T23:02",
+      "time": "",
+      "userId": "",
+      "id": 10
+    },
+    {
+      "title": "asdsadas",
+      "body": "asdasdasd",
+      "date": "2022-06-04T22:19",
+      "time": "",
+      "userId": "",
+      "id": 11
+    },
+    {
+      "title": "asdasd",
+      "body": "asdasd",
+      "date": "2022-06-01T23:34",
+      "time": "",
+      "id": 12
     }
   ],
   "users": [
@@ -69,11 +99,46 @@
       "id": 2
     },
     {
+      "firstName": "Hanna",
+      "lastName": "Gelin",
+      "email": "hanna@mail.com",
+      "password": "Bytmig123",
+      "id": 3
+    },
+    {
       "firstName": "Ines",
       "lastName": "Karlsson",
       "email": "ines@mail.com",
       "password": "Bytmig123",
       "id": 4
+    },
+    {
+      "email": "alice@mail.com",
+      "password": "$2a$10$LKdreIF0ZQnsAjqUkxB38OqzRH/TMUx7PgxQlD2K5zHMr4tZum/jO",
+      "firstName": "alice",
+      "lastName": "mops",
+      "id": 5
+    },
+    {
+      "email": "daniel2@dkmusic.se",
+      "password": "$2a$10$Q8xbZPnsO4vg00k4Hor0fuH/gn1v.VzMMJDgE9wRhSXH06hzT93zm",
+      "firstName": "Daniel",
+      "lastName": "Karlssonasd",
+      "id": 6
+    },
+    {
+      "email": "nisse@mail.com",
+      "password": "$2a$10$OcqkVf3.y6C2EjXYtwbZre9sI4/r7afWX/QyVF1jPUF0MbFqBk5m.",
+      "firstName": "Nisse",
+      "lastName": "Nisse",
+      "id": 7
+    },
+    {
+      "email": "vince@mail.com",
+      "password": "$2a$10$otGPc5pUtBJ7pFjMPD0cOu314m82OCKCDZ7SGS2e9zMkwS1kd8RVu",
+      "firstName": "Vince",
+      "lastName": "Karlsson",
+      "id": 8
     }
   ]
 }

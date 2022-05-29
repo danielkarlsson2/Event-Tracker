@@ -1,7 +1,6 @@
 import actiontypes from "../actiontypes";
 import axios from 'axios'
 
-
 export const getEvents = () => {
     return async dispatch => {
         dispatch(loading(true))
@@ -33,8 +32,6 @@ const addToList = (event) => {
     }
 }
 
-
-
 const setEvents = ( events ) => {
     return {
         type: actiontypes().events.setEvents,
@@ -55,12 +52,3 @@ const eventsFailure = (payload) => {
         payload
     }
 }
-
-
-
-// export const removeOne = id => {
-//     return {
-//         type: actiontypes().events.removeOne,
-//         payload: id
-//     }
-// }

@@ -2,8 +2,8 @@ import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import CreateView from './CreateView'
 import EventDetails from './EventDetails'
-// import Events from '../components/Events'
 import EventsView from './EventsView'
+import LoginView from './LoginView'
 import PastEvents from './PastEvents'
 
 const Views = () => {
@@ -14,6 +14,8 @@ const Views = () => {
             <Route path='/:id' element={<EventDetails /> } />
             <Route path='/create' element={<CreateView /> } />
             <Route path='/pastevents' element={<PastEvents /> } />
+            <Route path='/login' element={<LoginView /> } />
+            
             
         </Routes>
     </div>

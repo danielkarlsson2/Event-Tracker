@@ -3,7 +3,8 @@ import actiontypes from "../actiontypes";
 const initState = {
     data: [],
     loading: false,
-    error: null
+    error: null,
+    user: null
 
 }
 
@@ -22,7 +23,8 @@ const eventReducer = (state = initState, action) => {
             return {
               data: action.payload,
               loading: false,
-              error: null
+              error: null,
+              user: true
             }
         
 

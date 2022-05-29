@@ -6,8 +6,7 @@ export const getEvent = (id) => {
         dispatch(loading(true))
         try {
             const res = await axios.get('http://localhost:8080/posts/' + id)
-            dispatch(setEvent(res.data))
-            console.log('click')
+            dispatch(setEvent(res.data))            
         }
         catch (err) {
             dispatch(eventFailure(err.message))

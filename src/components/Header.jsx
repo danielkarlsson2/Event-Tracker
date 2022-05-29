@@ -1,24 +1,32 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
-// import { useSelector } from 'react-redux'
+import { useSelector, useDispatch } from 'react-redux'
+import { logoutUser } from '../store/actions/authAction'
 
 const Header = () => {
 
-    const onClick = () => {
-        console.log('click')
-    }
+  const dispatch = useDispatch()
+
+  const isAuth = useSelector(state => state.auth.token)
 
   return (
     <div className='container header d-flex mt-3 align-items-center'>
         <Link to="/" className='navbar-brand'><h1>Event Tracker</h1></Link> 
 
-      <div className='w-25 '>
+      <div className='nav-links'>
         <ul className='list-unstyled d-flex justify-content-between links'>
           <li><NavLink to="/create" className="text-dark link">Create Event</NavLink></li>
           <li><NavLink to="/pastevents" className="text-dark link">Past Events</NavLink></li>
-          <li><NavLink to="/" className="text-dark link"><i className="fa-solid fa-user"></i></NavLink></li>
+
+          { isAuth
+          ? (<>
+             <li><Link to="/login " onClick={() => dispatch(logoutUser())} className="text-dark link">Logout</Link></li>
+             </>)
+
+            : <li><NavLink to="/login" className="text-dark link">Login</NavLink></li>
+          }
         </ul>
-        {/* <button className='btn' onClick={onClick}>Add Event</button> */}
+        
       </div>
 
     </div>
